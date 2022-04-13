@@ -62,7 +62,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: Run unit tests
-        run: ./sbt docker::stage
+        run: ./sbt docker:stage
       - uses: actions/upload-artifact@master
         with:
           name: docker-sources

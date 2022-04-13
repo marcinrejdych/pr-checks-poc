@@ -4,8 +4,8 @@ enablePlugins(DockerPlugin)
 name := "demo_app"
 scalaVersion := "2.13.4"
 
-val akkaHttpVersion = "10.2.6"
-val akkaVersion = "2.6.16"
+val akkaHttpVersion = "10.2.9"
+val akkaVersion = "2.6.19"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
