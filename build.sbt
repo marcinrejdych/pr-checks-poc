@@ -1,3 +1,6 @@
+enablePlugins(JavaServerAppPackaging)
+enablePlugins(DockerPlugin)
+
 name := "demo_app"
 scalaVersion := "2.13.4"
 
