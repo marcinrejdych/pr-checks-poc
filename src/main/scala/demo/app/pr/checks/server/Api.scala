@@ -8,7 +8,8 @@ import akka.http.scaladsl.server._
 
 import scala.concurrent.ExecutionContext
 
-class Api()(implicit actorSystem: ActorSystem, ec: ExecutionContext) extends SprayJsonSupport {
+class Api()(implicit actorSystem: ActorSystem, ec: ExecutionContext)
+    extends SprayJsonSupport {
   val routes: Route =
     pathPrefix("users" / JavaUUID) { userId =>
       pathPrefix("path1") {
