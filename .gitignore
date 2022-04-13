@@ -1,2 +1,25 @@
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
 *.class
 *.log
+.git_commit_template
+.idea
+*.iml
+out
+gen
+.project
+.factorypath
+.classpath
+.settings
+.vscode
+.bsp
+
+### OSX ###
+*.DS_Store
