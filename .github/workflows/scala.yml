@@ -81,7 +81,7 @@ jobs:
           path: target/docker/stage
       - name: Build the Docker image
         run: |
-          docker build ./target/docker/stage --file Dockerfile --tag demo-app:$GITHUB_SHA
+          docker build ./target/docker/stage --tag demo-app:$GITHUB_SHA
           mkdir -p docker/image
           docker save demo-app:$GITHUB_SHA > docker/image/docker-image.tar
 
